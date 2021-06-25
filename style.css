@@ -1,0 +1,277 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --dark-gray: hsl(0, 0%, 63%);
+        --black: hsl(0, 0%, 0%);
+        --white: hsl(0, 0%, 100%);
+        --very-dark-gray: hsl(0, 0%, 27%);
+    }
+    
+    body {
+        font-family: 'Spartan', sans-serif;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    #slide img {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        left: 0;
+    }
+    
+    .upper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .navbar {
+        z-index: 99999999999;
+        position: relative;
+    }
+    
+    .navbar ul li {
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        display: inline-block;
+        color: white;
+        margin-top: 25%;
+        margin-left: 33px;
+        text-decoration: none;
+    }
+    
+    .navbar ul li a:hover {
+        border-bottom: 2px solid white;
+    }
+    
+    #slide img {
+        margin-top: -80px;
+    }
+    
+    #slide span {
+        font-size: 33px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    #slide p {
+        z-index: 2;
+        position: absolute;
+        bottom: 280px;
+        left: 920px;
+        width: 30%;
+        font-size: 14px;
+        color: var( --dark-gray)
+    }
+    
+    .upper-right a {
+        margin: 25% 5.5% 3% 5.5%;
+        display: inline-block;
+        margin-top: 81.4%;
+        color: var(--black);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    .upper-right img {
+        margin-left: 103%;
+        margin-top: -45px;
+    }
+    
+    .upper-right-link:hover {
+        opacity: .5;
+    }
+    
+    .black-box button {
+        background-color: var(--black);
+        border: none;
+        margin-left: -13.4%;
+        margin-top: 12.5%;
+    }
+    
+    .black-box button:hover {
+        opacity: .5;
+    }
+    
+    .angle-left {
+        margin-right: 50px;
+        width: 15%;
+        height: 50px;
+    }
+    
+    .angle-left img,
+    .angle-right img {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .angle-right {
+        width: 15%;
+        height: 50px;
+    }
+    
+    .lower-part {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+    }
+    
+    .lower-left {
+        background-image: url(../images/image-about-dark.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    .lower-right {
+        background-image: url(../images/image-about-light.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    .middle-inferior div {
+        margin-top: 10%;
+        margin-left: -10%;
+        margin-right: 5%;
+    }
+    
+    .middle-inferior h3 {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 5%;
+    }
+    
+    .middle-inferior p {
+        font-size: 12px;
+        color: var( --dark-gray)
+    }
+    
+    @media (max-width: 375px) {
+        main#desktop {
+            display: none;
+        }
+        .mobile {
+            display: inline-block;
+        }
+        .modal {
+            margin-top: -9.5px;
+            margin-left: -9px;
+            width: 393px;
+        }
+        .modal-footer {
+            padding: 0;
+            flex-wrap: nowrap;
+        }
+        .modal-footer>:not(:last-child) {
+            margin-right: -0.3rem;
+        }
+        a {
+            color: black;
+        }
+        .navbar.mobile {
+            z-index: 99999999999;
+            position: relative;
+            margin-top: -25px;
+        }
+        .menu {
+            margin-left: -40px;
+        }
+        figure.figure-mobile {
+            margin: 0;
+        }
+        img {
+            margin: 0;
+        }
+        .figure-mobile img {
+            display: flex;
+            width: 375px;
+            margin-top: -80px;
+        }
+        .black-box-mobile {
+            position: relative;
+            margin-top: -45.5px;
+            margin-left: 285px;
+            width: 90px;
+        }
+        .angle-left.botoes button {
+            background-color: var(--black);
+            border: none;
+            margin-left: 10%;
+            margin-top: 10px;
+        }
+        .angle-right.botoes button {
+            background-color: var(--black);
+            border: none;
+            margin-left: 30%;
+            margin-top: -0px;
+        }
+        .black-box-mobile button {
+            background-color: var(--black);
+            border: none;
+            width: 50px;
+            margin: -5px;
+        }
+        main#mobile {
+            width: 375px;
+            margin: 0;
+        }
+        main#mobile h1 {
+            margin-top: 40px;
+            margin-left: 7%;
+            font-weight: 700;
+        }
+        main#mobile p {
+            margin: 3% 7% 0 7%;
+            font-size: 12px;
+            color: var( --dark-gray)
+        }
+        #shop-now {
+            margin: 40px 0% 13% 7%;
+            display: inline-block;
+        }
+        #shop-now a {
+            color: var( --black);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 600;
+        }
+        #shop-now img {
+            margin-left: 40px;
+        }
+        #second-img {
+            background-image: url(../images/image-about-dark.jpg);
+            background-repeat: no-repeat;
+            width: 375px;
+            height: 270px;
+        }
+        .middle-inferior-mobile {
+            width: 375px;
+        }
+        .middle-inferior-mobile h3 {
+            margin: 40px 0 5% 7%;
+            font-weight: 900;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .middle-inferior-mobile p {
+            font-size: 12px;
+            color: var( --dark-gray)
+        }
+        #third-img {
+            margin-top: 12%;
+            background-image: url(../images/image-about-light.jpg);
+            background-repeat: no-repeat;
+            width: 375px;
+            height: 270px;
+        }
+    }
